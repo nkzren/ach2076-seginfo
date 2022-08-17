@@ -1,0 +1,4 @@
+[submodule "apostila-seginf"]
+    path = apostila-seginf
+    url = git@github.com:marciomr/apostila-seginf.git
+	branch = master
