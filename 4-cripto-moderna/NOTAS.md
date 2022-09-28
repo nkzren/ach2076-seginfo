@@ -64,6 +64,23 @@ E(k, m) = G(k) (+) m
 D(k, c) = G(k) (+) c
 ```
 
+---
+
 **Teorema:** Seja `G` um gerador de números pseudo-aleatórios com fator de
 expansão `l`, o sistema `pi` definido anteriormente é seguro contra ataques
 *cyphertext-only* para mensagens `m` de tamanho fixo `l(n)`
+
+---
+
+Na prática construímos um gerador de números pseudo-aleatórios como um par de
+algoritmos `<init, GenBits>`:
+
+* `init` recebe a semente (`s`) e opcionalmente um vetor inicial (`IV`) e produz
+  um estado inicial (`st(0)`, ou *state 0*)
+* `GenBits` recebe um estado inicial (`st(i)`), atualiza esse estado (`st(i+1)`)
+  e produz um bit (`y`)
+
+## *Linear Feedback Shift Registor (LFSR)*
+
+
+
